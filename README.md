@@ -10,6 +10,8 @@ In this project, I used flexbox to design and build the layout for a company’s
 ## Link 
 
 ## Credits
+Content sourced from [Lake Valley Bulldogs](https://www.lakevalleybulldogs.org/).
+
 Bulldog favicon created by [Triberion](https://www.flaticon.com/free-icons/dog).
 
 ## Questions 
