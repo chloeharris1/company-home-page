@@ -59,6 +59,7 @@ p {
     border-radius: .25rem;
     padding: 2rem;
     margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
@@ -234,11 +235,19 @@ nav li {
 .puppies {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     justify-content: center;
     height: auto;
-    background-color: #c0d3d8;
+    background-color: #aebad2;
     border-radius: 0.25rem;
+}
+
+.litter-info {
+    padding-bottom: 3rem;
+}
+
+.section-header {
+    padding-bottom: 2rem;
 }
 
 .due-date {
@@ -246,7 +255,6 @@ nav li {
     justify-content: center;
     align-content: center;
     font-size: 1.5rem;
-    font-style: italic;
     padding: 1rem;
 }
 
@@ -258,10 +266,24 @@ nav li {
     display: inline-flex;
     flex-direction: column;
     width: 25%;
+    background-color: #f4f3ef;
 }
 
 .featured {
     text-align: center;
+}
+
+.featured h2 {
+    padding-bottom: 1rem;
+}
+
+.parents {
+    font-size: 3rem;
+    color: #f4f3ef;
+    background-color: #302C1F;
+    border-radius: 80%;
+    padding: 1.3rem 1.7rem;
+    justify-content: center;
 }
 
 .details-section {
@@ -325,6 +347,7 @@ nav li {
     text-align: justify;
     border-radius: .25rem;
     background-color: #f4f3ef;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .bio-card .image-container {
@@ -405,7 +428,7 @@ hr {
     justify-content: space-around;
     align-content: center;
     padding: 1%;
-    background-color: #c0d3d8;
+    background-color: #aebad2;
     padding: 1.875rem;
 }
 
