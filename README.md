@@ -7,6 +7,8 @@ In this project, I used flexbox to design and build the layout for a company’s
 
 ## Snapshot
 
+![screenshot](./images/screenshots/lakevalleyhomepage.png)
+
 ## Link 
 
 ## Credits
