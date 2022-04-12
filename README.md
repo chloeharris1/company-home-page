@@ -3,7 +3,7 @@
 A Codecademy project in the Front-End-Engineer career path. 
 
 ## Description 
-In this project, I used flexbox to design and build the layout for a company’s homepage.
+In this project, I used flexbox to design and build the layout for the Lake Valley Bulldogs homepage.
 
 ## Snapshot
 
