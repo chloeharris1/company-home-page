@@ -8,14 +8,14 @@
 }
 
 html {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-size: 16px;
     background-color: #f4f3ef;
 }
 
 .main-content {
     display: flex;
-    position: relative;
+    flex-direction: column;
     top: 5.3125rem;
 }
 
@@ -23,16 +23,12 @@ html {
     display: flex;
     width: 100%;
     flex-direction: column;
-}
-
-.image-container {
-    overflow: hidden;
     justify-content: center;
 }
 
-.image-container img {
-    display: block;
-    max-width: 100%;
+.image-container {
+    display: flex;
+    overflow: hidden;
 }
 
 img {
@@ -44,12 +40,12 @@ a {
 }
 
 a:hover {
-    color: #922724;
+    color: #c0d3d8;
 }
 
 h1,
 h2 {
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Ovo', serif;
 }
 
 p {
@@ -58,11 +54,10 @@ p {
 }
 
 .card {
+    display: flex;
     /* border: 2px solid gold; */
     border-radius: .25rem;
     padding: 2rem;
-    line-height: 1.6;
-    min-width: 25%;
     margin: 1rem;
 }
 
@@ -72,9 +67,9 @@ p {
 header {
     position: fixed;
     width: 100%;
-    background-color: #fff;
     z-index: 1;
     height: 5.3125rem;
+    background-color: #fff;
     /* Bottom shadow */
     -webkit-box-shadow: 0 8px 6px -6px #86817c;
     -moz-box-shadow: 0 8px 6px -6px #86817c;
@@ -89,7 +84,7 @@ header .content {
 }
 
 header .company {
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Ovo', serif;
     font-size: 1.5rem;
     font-weight: 700;
     flex: 1;
@@ -108,6 +103,8 @@ nav li {
 .section-header {
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
+    /* background-color: fuchsia; */
 }
 
 
@@ -131,16 +128,16 @@ nav li {
 
 .mission {
     display: flex;
-    flex: 1;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .mission h1 {
-    font-size: 3.125rem;
-    color: white;
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
+    color: white;
 }
 
 .breeder,
@@ -155,18 +152,23 @@ nav li {
 
 .breeder {
     display: flex;
-    height: auto;
     flex-wrap: wrap;
+    flex: 1;
     /* border: 3px solid greenyellow; */
-    justify-content: space-between;
+    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
 }
 
 .owner {
     display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 25%;
 }
 
 .owner img {
+    display: flex;
     overflow: hidden;
     padding: 2%;
 }
@@ -174,7 +176,7 @@ nav li {
 .story {
     display: flex;
     display: block;
-    width: 40%;
+    width: 50%;
     padding: 2rem 1rem;
     /* border: 3px solid rebeccapurple; */
     text-align: justify;
@@ -182,29 +184,47 @@ nav li {
 
 .goal {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     padding: 1.5rem;
     text-align: center;
+    font-style: italic;
 }
 
 
 /* Family Photo Gallery */
 
-.gallery {
+#gallery {
     display: flex;
-    width: 25%;
-    /* border: 3px solid turquoise; */
+    flex-direction: column;
+    width: 20%;
     background-color: #EFD7B9;
-    border-radius: .25rem;
-    justify-content: center;
 }
 
-.gallery .card {
+#gallery .image-container {
+    display: flex;
+    flex: 1;
+    height: auto;
+    margin-bottom: 1rem;
+    /* border: 2px solid indigo; */
+}
+
+.image-container img {
+    object-fit: cover;
     min-width: 100%;
+    min-height: 100%;
 }
 
-.gallery .fun-photos {
+.fun-photos {
+    /* border: 2px solid green; */
     text-align: center;
+    line-height: 1.6;
+}
+
+.fun-photos h2 {
+    padding-bottom: 0.5rem;
+}
+
+.fun-photos h4 {
     padding-top: 1rem;
 }
 
@@ -214,26 +234,24 @@ nav li {
 .puppies {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-content: center;
-    /* border: 3px solid orange; */
+    height: auto;
+    background-color: #c0d3d8;
+    border-radius: 0.25rem;
 }
 
 .due-date {
     display: flex;
     justify-content: center;
-    /* border: 2px solid green; */
-}
-
-.details-section {
-    display: flex;
-    /* border: 2px solid plum; */
-}
-
-.details-content {
-    justify-content: center;
     align-content: center;
+    font-size: 1.5rem;
+    font-style: italic;
     padding: 1rem;
+}
+
+.puppies .card-container {
+    align-items: center;
 }
 
 .puppies .card {
@@ -242,10 +260,39 @@ nav li {
     width: 25%;
 }
 
+.featured {
+    text-align: center;
+}
 
-/* .featured {
-    border: 2px solid orangered;
-} */
+.details-section {
+    display: flex;
+    height: 18.75rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f4f3ef;
+}
+
+.puppy-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    text-align: justify;
+    padding: 2%;
+}
+
+.puppy-info .icon {
+    padding: 1.3rem;
+    background-color: #EFD7B9;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.puppy-info p {
+    padding: 1rem;
+}
 
 
 /* Studs */
@@ -255,7 +302,6 @@ nav li {
     flex-direction: column;
     background-color: #EFD7B9;
     border-radius: 0.25rem;
-    /* border: 3px solid blue; */
 }
 
 .section-header {
@@ -268,15 +314,13 @@ nav li {
     flex: 1;
     justify-content: center;
     justify-content: space-around;
-    /* border: 2px solid firebrick; */
 }
 
 .bio-card {
-    /* border: 2px solid violet; */
     padding: 2rem;
     line-height: 1.6;
     width: 25%;
-    max-height: 50%;
+    height: auto;
     margin: 1rem;
     text-align: justify;
     border-radius: .25rem;
@@ -289,9 +333,19 @@ nav li {
 }
 
 .image-container img {
+    display: flex;
     object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.stud-fee {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    font-weight: bold;
+    margin: auto;
 }
 
 hr {
@@ -316,23 +370,24 @@ hr {
     display: flex;
     flex-direction: column;
     height: auto;
-    /* border: 3px solid red; */
 }
 
 .card-container {
     display: flex;
-    /* border: 2px solid navy; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .girls .card {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     width: 25%;
     background-color: #EFD7B9;
 }
 
 .card .image-container {
+    display: flex;
+    flex: 1;
+    height: auto;
     height: 45%;
     margin-bottom: 1rem;
 }
@@ -350,14 +405,13 @@ hr {
     justify-content: space-around;
     align-content: center;
     padding: 1%;
-    background-color: #EFD7B9;
+    background-color: #c0d3d8;
     padding: 1.875rem;
 }
 
 .social-links img {
     display: inline-flex;
     padding: 0 0.625rem;
-    /* border: 2px solid red; */
 }
 
 .contact h3 {
