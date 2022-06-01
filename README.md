@@ -1,4 +1,5 @@
 # Company Home Page with Flexbox
+![license badge](https://img.shields.io/badge/license-MIT-blue)
 
 A Codecademy project in the Front-End-Engineer career path. 
 
@@ -15,6 +16,9 @@ In this project, I used flexbox to design and build the layout for the Lake Vall
 Content sourced from [Lake Valley Bulldogs](https://www.lakevalleybulldogs.org/).
 
 Bulldog favicon created by [Triberion](https://www.flaticon.com/free-icons/dog).
+
+## License
+Licensed under the MIT license.
 
 ## Questions 
 [Email Me](Chloe.a.harris17@gmail.com) if you have any questions.
